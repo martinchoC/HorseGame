@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--colores para el fondo de la app-->
+    <color name="app_color_dark">#10190F</color>
+    <color name="app_color_regular">#776E65</color>
+    <color name="app_color_light">#FAF8EF</color>
+
+    <!--colores de la celda del tablero-->
+    <color name="black_cell">#423327</color>
+    <color name="white_cell">#EFCF9B</color>
+    <color name="white_cell_premium">#EAF7E0</color>
+    <color name="black_cell_premium">#185303</color>
+
+    <!--colores de contraste para dar informacion importante-->
+    <color name="contrast_data">#A40D0D</color>
+    <color name="contrast_data_premium">#17711B</color>
+
+    <!--colres de las celdas en sí-->
+    <color name="selected_cell">#780533</color>
+    <color name="previous_cell">#FFA500</color>
+    <color name="enabled_cell">#1775A4</color>
+
+    <!--fondo para el mensaje-->
+    <color name="message_bg">#CDFAF8EF</color>
+</resources>
