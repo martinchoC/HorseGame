@@ -26,6 +26,8 @@
             android:textAlignment="center"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"/>
+
+
     </LinearLayout>
 
     <ScrollView
@@ -40,6 +42,211 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:fontFamily="@font/rowdies_bold"
+                android:textSize="26sp"
+                android:textColor="@color/app_color_regular"
+                android:textAlignment="center"
+                android:layout_marginTop="22dp"/>
+
+            <TextView
+                android:id="@+id/tvLevelTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_title_top"
+                android:fontFamily="@font/rowdies_bold"
+                android:paddingTop="10dp"
+                android:text="@string/level"
+                android:textAlignment="center"
+                android:textColor="@color/app_color_light"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tvLevelNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_title_bottom"
+                android:fontFamily="@font/rowdies_bold"
+                android:paddingTop="10dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/app_color_light"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvMovesTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_data_top"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/moves"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/tvMovesData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_data_bottom"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvTimeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_data_top"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/time"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/tvTimeData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_data_bottom"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvLiveTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_data_top_contrast"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/lives"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/tvLiveData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_data_bottom_contrast"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvOptionsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_data_top"
+                        android:fontFamily="@font/rowdies_bold"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/options"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_color_light"
+                        android:textSize="18sp"/>
+                    <View
+                        android:id="@+id/vNewBonus"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/contrast_data"
+                        android:translationY="-8dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_data_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:translationY="-8dp">
+                        <TextView
+                            android:id="@+id/tvOptionsData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_data_bottom"
+                            android:fontFamily="@font/rowdies_bold"
+                            android:paddingTop="10dp"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="@color/app_color_light"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:id="@+id/tvBonusData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_data_bottom"
+                            android:fontFamily="@font/rowdies_bold"
+                            android:paddingTop="10dp"
+                            android:text=""
+                            android:textColor="@color/app_color_light"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>

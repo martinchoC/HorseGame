@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/drawable-v24/bg_data_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/drawable-v24/bg_data_bottom_contrast.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/drawable-v24/bg_data_top.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/drawable-v24/bg_data_top_contrast.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/drawable-v24/bg_title_bottom.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/drawable/bg_title_top.xml" value="0.1" />
+        <entry key="..\:/Users/marti/AndroidStudioProjects/HorseGame/app/src/main/res/layout/activity_main.xml" value="0.67" />
       </map>
     </option>
   </component>
