@@ -11,19 +11,41 @@ import android.widget.TableRow
 import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
+
     private var cellSelected_x = 0
     private var cellSelected_y = 0
+
+    private lateinit var board: Array<IntArray>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         initScreenGame()
+        resetBoard()
         setFirstPosition()
     }
 
     private fun initScreenGame(){
         setSizeBoard()
         hideMessage()
+    }
+
+    private  fun resetBoard(){
+        // 0 está libre
+        // 1 casilla marcada
+        // 2 bonus
+        // 9 opcion del movimieto actual
+        board = arrayOf(
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0),
+            intArrayOf(0,0,0,0,0,0,0,0)
+        )
     }
 
     private fun setSizeBoard(){
@@ -69,6 +91,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun selectCell(x:Int, y:Int){
+        board[x][y] = 1
         paintHorseCell(cellSelected_x,cellSelected_y,"previous_cell")
         cellSelected_x = x
         cellSelected_y = y
