@@ -26,6 +26,32 @@ class MainActivity : AppCompatActivity() {
         setFirstPosition()
     }
 
+    fun checkCellClicked(v: View) {
+        var name = v.tag.toString()
+        var x = name.subSequence(1,2).toString().toInt()
+        var y = name.subSequence(2,3).toString().toInt()
+        checkCell(x,y)
+    }
+
+    private fun checkCell(x:Int, y:Int){
+        var dif_x = x- cellSelected_x
+        var dif_y = y - cellSelected_y
+
+        var checkTrue = false
+        if (dif_x == 1 && dif_y == 2) checkTrue = true
+        if (dif_x == 1 && dif_y == -2) checkTrue = true
+        if (dif_x == 2 && dif_y == 1) checkTrue = true
+        if (dif_x == 2 && dif_y == -1) checkTrue = true
+        if (dif_x == -1 && dif_y == 2) checkTrue = true
+        if (dif_x == -1 && dif_y == -2) checkTrue = true
+        if (dif_x == -2 && dif_y == 1) checkTrue = true
+        if (dif_x == -2 && dif_y == -1) checkTrue = true
+
+        if(board[x][y] == 1) checkTrue = false
+
+        if(checkTrue) selectCell(x,y)
+    }
+
     private fun initScreenGame(){
         setSizeBoard()
         hideMessage()
