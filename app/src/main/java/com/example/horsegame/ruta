@@ -15,6 +15,7 @@ MEJORAS DE UX (luego resuelvo esto)
 *
 
 FUNCIONALIDADES (finalmente esto)
+* inicio aleatorio del caballo
 * poder mover el caballo (comprobando el movimiento en L)
 * pintar niveles (y limpiarlos)
 * control de movimientos
