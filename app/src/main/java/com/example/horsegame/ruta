@@ -1,0 +1,27 @@
+1- mejorar las funcionalidades existentes -> QUE FUNCIONE
+2- mejorar la UX de las funcionalidades existentes
+3- añadir nuevas funcionalidades
+
+ERRORES (primero resuelvo esto)
+* redimensionado del tablero
+*
+*
+*
+
+MEJORAS DE UX (luego resuelvo esto)
+* un color para el punto actual y otro para el rastro
+*
+*
+*
+
+FUNCIONALIDADES (finalmente esto)
+* poder mover el caballo (comprobando el movimiento en L)
+* pintar niveles (y limpiarlos)
+* control de movimientos
+* control de opciones
+* control de tiempo
+* control de vidas
+* mostrar publicidad
+* permitir pagar para ser premium
+* habilitar accesos de premium a más niveles y deshabilitar publicidad
+* opcion compartir resultados
