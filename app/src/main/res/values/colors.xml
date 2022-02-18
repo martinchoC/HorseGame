@@ -24,7 +24,7 @@
     <color name="contrast_data_premium">#17711B</color>
 
     <!--colres de las celdas en sí-->
-    <color name="selected_cell">#780533</color>
+    <color name="selected_cell">#05F8F8</color>
     <color name="previous_cell">#FFA500</color>
     <color name="enabled_cell">#1775A4</color>
 
