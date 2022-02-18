@@ -3,12 +3,14 @@ package com.example.horsegame
 import android.graphics.Point
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Layout
 import android.util.TypedValue
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TableRow
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
@@ -156,10 +158,10 @@ class MainActivity : AppCompatActivity() {
 
         if(moves > 0) {
             checkNewBonus()
-            //checkGameOver(x,y)
+            checkGameOver(x,y)
         }
-        //else
-            //checkSuccessfulEnd()
+        else
+            showMessage ("You win", "Next level", false)
     }
 
     private fun growProgressBonus(){
@@ -272,5 +274,32 @@ class MainActivity : AppCompatActivity() {
     private fun paintBonusCell(x:Int, y:Int){
         var iv: ImageView = findViewById(resources.getIdentifier("c$x$y","id",packageName))
         iv.setImageResource(R.drawable.ic_bonus)
+    }
+
+    private fun checkGameOver(x:Int, y:Int){
+        if (options == 0){
+            if (bonus == 0)
+                showMessage ("Game Over", "Try again", true)
+        }
+    }
+
+    private fun showMessage(title:String, action:String, gameOver:Boolean){
+        var lyMessage = findViewById<LinearLayout>(R.id.lyMessage)
+        lyMessage.visibility = View.VISIBLE
+        var tvTitleLevel = findViewById<TextView>(R.id.tvTitleMessage)
+        tvTitleLevel.text = title
+        var score: String = ""
+        var tvTimeData = findViewById<TextView>(R.id.tvTimeData)
+        if(gameOver){
+            score = "Score: "+ (levelMoves - moves) + "/" + levelMoves
+        }
+        else{
+            score = tvTimeData.text.toString()
+        }
+        var tvScoreMessage = findViewById<TextView>(R.id.tvScoreMessage)
+        tvScoreMessage.text = score
+        var tvAction = findViewById<TextView>(R.id.tvAction)
+        tvAction.text = action
+
     }
 }
