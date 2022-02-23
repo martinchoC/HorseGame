@@ -30,7 +30,6 @@ import java.util.*
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
-
     private var bitmap: Bitmap?= null
 
     private var mHandler: Handler? = null
