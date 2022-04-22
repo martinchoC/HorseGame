@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HorseGame</string>
+    <string name="app_name">Horse challenge</string>
 
     <string name="title">Horse challenge</string>
     <string name="level">Level</string>
