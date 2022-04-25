@@ -23,6 +23,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.test.runner.screenshot.ScreenCapture
 import androidx.test.runner.screenshot.Screenshot.capture
+import com.google.android.gms.ads.MobileAds
 import java.io.File
 import java.io.FileOutputStream
 import java.text.SimpleDateFormat
@@ -66,9 +67,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initScreenGame()
+        initAds()
         startGame()
     }
 
+    private fun initAds(){
+        MobileAds.initialize(this)
+    }
     private fun initScreenGame(){
         setSizeBoard()
         hideMessage(false)
